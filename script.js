@@ -8,3 +8,20 @@ const boilingPointC = 100;
 const boilingPointF = 212;
 
 console.log(myLuckyNumber, octopusLimbs, boilingPointC, boilingPointF);
+
+// about string
+let bestColor = 'purple';
+let quote = 'You had me at "Hello"';
+
+console.log(bestColor, quote);
+
+// about string method
+const message = "    TASTE THE RAINBOW!  "; 
+let whisper = message.trim().toLowerCase();
+console.log(whisper);
+
+// more about string method
+const word = "skateboard";
+let facialHair = word.slice(5).replace('o', 'e');
+console.log(facialHair);
+
