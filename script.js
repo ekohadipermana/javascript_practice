@@ -104,6 +104,12 @@ generated the address portion.    For example, if address was
   spaces between the values and match that too!)
 */
 
-for (i = 0; i === 6; i++) {
+for (let i = 0; i <= 6; i++) {
     console.log('abc');
 }
+
+for (let i = 25; i >= 0; i -= 5) {
+    console.log(i);
+}
+
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
