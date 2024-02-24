@@ -119,5 +119,32 @@ for (i = 0; i < people.length; i++) {
 
 const numbers = [1,2,3,4,5,6,7,8,9];
 for (const element of numbers) {
-    console.log(element);
+    console.log(element ** 2);
 }
+
+
+/* 
+In some dice games like Craps, a roll of two 1's is called "Snake Eyes".
+  It's generally not a good roll.  Please write a function called 
+  isSnakeEyes, which accepts two numbers as inputs, representing two dice. 
+   If the two numbers are both 1's, please print "Snake Eyes!" otherwise 
+   print "Not Snake Eyes!"
+
+isSnakeEyes(1,1) //Snake Eyes!
+isSnakeEyes(1,5) //Not Snake Eyes!
+isSnakeEyes(4,5) //Not Snake Eyes!
+Hint: Normally a function will return a value, but for the sake of having 
+this work with the Udemy interpreter we will be using console.log() instead 
+of return, to print the output.
+*/
+
+function isSnakeEyes (num1, num2) {
+    if (num1 === 1 && num2 === 1) {
+        console.log('Snake eyes');
+    }
+    else {
+        console.log('Not snake eyes');
+    }
+}
+
+isSnakeEyes(1, 5);
