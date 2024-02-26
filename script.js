@@ -148,3 +148,13 @@ function isSnakeEyes (num1, num2) {
 }
 
 isSnakeEyes(1, 5);
+
+
+// defining an object attribute and method
+
+const grenadier = {
+    name: (theName),
+    rank: (theRank),
+}
+
+console.log(grenadier.name('Eko'))
