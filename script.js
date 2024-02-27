@@ -176,6 +176,33 @@ const person = {
 console.log(person.fullName());
 person.last;
 
+const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+nums.forEach(function (n) {
+    console.log(n);
+})
+
+const names = ['eko', 'hadi', 'permana'];
+
+names.forEach(function (name) {
+    console.log(name.toUpperCase());
+})
+
+let evenNums = [];
+nums.forEach(function (n) {
+    if (n % 2 === 0) {
+        console.log(n);
+        evenNums.push(n);
+    }
+})
+
+console.log(evenNums);
+
+// map function
+const texts = ['a', 'b', 'c', 'd'];
+const caps = texts.map(function (t) {
+    return t.toUpperCase();
+})
 
 
 
