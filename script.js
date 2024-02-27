@@ -155,6 +155,13 @@ isSnakeEyes(1, 5);
 const grenadier = {
     name: (theName),
     rank: (theRank),
+    grenadeCount: 5,
+    throwGrenade () {
+        console.log('throw');
+    }
 }
 
-console.log(grenadier.name('Eko'))
+let ekoGrenadier = grenadier('Eko', 'Sergeant');
+console.log(ekoGrenadier.name);
+
+
