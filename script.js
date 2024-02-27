@@ -204,6 +204,8 @@ const caps = texts.map(function (t) {
     return t.toUpperCase();
 })
 
-
+let greet = (name) => {
+    return `Hey ${name}!`;
+}
 
 
