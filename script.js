@@ -164,6 +164,19 @@ function grenadier (name, rank, grenadeCount) {
 let ekoGrenadier = new grenadier('Eko', 'Sergeant', 10);
 console.log(ekoGrenadier.name, ekoGrenadier.rank);
 
+// about keyword this
+const person = {
+    first: 'Robert',
+    last: 'Herjavac',
+    fullName() {
+        return `${this.first} ${this.last}`
+    }
+}
+
+console.log(person.fullName());
+person.last;
+
+
 
 
 
