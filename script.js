@@ -152,16 +152,18 @@ isSnakeEyes(1, 5);
 
 // defining an object attribute and method
 
-const grenadier = {
-    name: (theName),
-    rank: (theRank),
-    grenadeCount: 5,
-    throwGrenade () {
+function grenadier (name, rank, grenadeCount) {
+    this.name = name;
+    this.rank = rank;
+    this.grenadeCount = grenadeCount;
+    this.throwGrenade  = function () {
         console.log('throw');
-    }
+    };
 }
 
-let ekoGrenadier = grenadier('Eko', 'Sergeant');
-console.log(ekoGrenadier.name);
+let ekoGrenadier = new grenadier('Eko', 'Sergeant', 10);
+console.log(ekoGrenadier.name, ekoGrenadier.rank);
+
+
 
 
