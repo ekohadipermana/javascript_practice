@@ -209,5 +209,19 @@ let greet = (name) => {
     return `Hey ${name}!`;
 }
 
+// declaring an object
+function Squad (name, age, rank, role) {
+    this.name = name;
+    this.age = age;
+    this.rank = rank;
+    this.role = role;
+    this.check = function () {
+        console.log (rank, name);
+    }
+}
+
+let eko = new Squad ('Eko', 45, 'Sergeant', 'Grenadier');
+console.log(eko.age, eko.name, eko.rank);
+
 
 
